@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Red Hat Display", system-ui, sans-serif;
+  --font-display: "Red Hat Display", system-ui, sans-serif;
+  --color-era: #c8102e;
+  --color-era-dark: #9e0c24;
+  --color-era-light: #e83a54;
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-soft: #2a2a2a;
+  --color-cream: #faf7f2;
+  --color-cream-dark: #f0ebe3;
+  --color-muted: #6b6560;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #fff;
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
