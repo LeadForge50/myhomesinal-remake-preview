@@ -21,7 +21,7 @@ export default function Buyers() {
           </h1>
           <p className="mt-4 max-w-xl text-white/70">
             Ashley Stedham Mitchell helps you cut through noise — clear goals, smart tours, and strong
-            offers across Calhoun, Cherokee, and St. Clair counties.
+            offers across Calhoun, Cleburne, Cherokee, Talladega, and St. Clair counties.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link

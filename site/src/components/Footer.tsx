@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { AGENT, FEATURED_GUIDES, SOCIAL } from '../data/content'
+import { AGENT, COUNTIES_PROSE, FEATURED_GUIDES, SOCIAL } from '../data/content'
 import { IMG } from '../data/assets'
 
 function SocialLink({ href, label }: { href: string; label: string }) {
@@ -132,10 +132,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-widest text-white/50">Service areas</h3>
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-widest text-white/50">Areas served</h3>
           <p className="text-sm leading-relaxed text-white/70">
-            Calhoun, Cherokee & St. Clair Counties — Anniston, Oxford, Jacksonville, Heflin, Piedmont,
-            Lincoln, Logan Martin Lake, Weiss Lake, Coosa River, Chief Ladiga Trail corridor.
+            {COUNTIES_PROSE} — plus Logan Martin Lake, Weiss Lake, the Coosa River, and the Chief Ladiga
+            Trail corridor.
           </p>
         </div>
       </div>

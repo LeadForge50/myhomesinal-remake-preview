@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import ConsultForm from '../components/ConsultForm'
-import { AGENT, SOCIAL } from '../data/content'
+import { AGENT, COUNTIES_SHORT, SOCIAL } from '../data/content'
 
 function SocialLink({ href, label }: { href: string; label: string }) {
   if (href) {
@@ -64,7 +64,7 @@ export default function Contact() {
             </a>
             <div className="rounded-xl border border-white/10 bg-charcoal-soft p-4">
               <p className="text-[11px] font-semibold uppercase tracking-wider text-era-light">Serving</p>
-              <p className="mt-1 text-sm font-medium">Calhoun · Cherokee · St. Clair</p>
+              <p className="mt-1 text-sm font-medium leading-snug">{COUNTIES_SHORT}</p>
             </div>
           </div>
           <div>

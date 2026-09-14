@@ -42,7 +42,7 @@ export const HERO_SLIDES: HeroSlide[] = [
   {
     id: 'family-homes',
     main: 'Find Your Next Chapter.',
-    sub: 'Anniston · Oxford · Jacksonville & Nearby Towns',
+    sub: 'Calhoun · Cleburne · Cherokee · Talladega · St. Clair',
     image: IMG.suburbanHomes,
     alt: 'Family homes in an East Alabama neighborhood',
   },

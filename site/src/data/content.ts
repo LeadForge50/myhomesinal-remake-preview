@@ -17,12 +17,26 @@ export const SOCIAL = {
 } as const
 
 export const AREAS = [
-  { name: 'Anniston', blurb: 'Historic downtown charm, museums & mountain views' },
-  { name: 'Oxford', blurb: 'Shopping, schools & family neighborhoods' },
-  { name: 'Jacksonville', blurb: 'University-town energy & quiet residential streets' },
-  { name: 'Heflin', blurb: 'Cleburne County living with Cheaha close at hand' },
-  { name: 'Piedmont', blurb: 'Trail-town living along the Chief Ladiga corridor' },
-  { name: 'Lincoln', blurb: 'Growing Honda-corridor community with easy commuting' },
+  {
+    name: 'Calhoun County',
+    blurb: 'Anniston, Oxford & Jacksonville — hometown living with JSU energy',
+  },
+  {
+    name: 'Cleburne County',
+    blurb: 'Heflin & Cheaha — mountain views, acreage, and small-town pace',
+  },
+  {
+    name: 'Cherokee County',
+    blurb: 'Centre, Cedar Bluff & Weiss Lake fishing retreats',
+  },
+  {
+    name: 'Talladega County',
+    blurb: 'Lincoln & Talladega — Honda-corridor commuting and racing heritage',
+  },
+  {
+    name: 'St. Clair County',
+    blurb: 'Pell City & Logan Martin — docks, weekends, and easy I-20 access',
+  },
 ] as const
 
 export const LAKES = [
@@ -46,7 +60,12 @@ export const CREDENTIALS = [
   'ERA Cre@tor',
 ] as const
 
-export const COUNTIES = ['Calhoun County', 'Cherokee County', 'St. Clair County'] as const
+export const COUNTIES = AREAS.map((area) => area.name)
+
+/** Compact “areas served” line for banners, contact cards, and footers. */
+export const COUNTIES_SHORT = 'Calhoun · Cleburne · Cherokee · Talladega · St. Clair'
+
+export const COUNTIES_PROSE = 'Calhoun, Cleburne, Cherokee, Talladega, and St. Clair counties'
 
 export type FaqItem = { q: string; a: string }
 
@@ -76,7 +95,7 @@ export const FAQ_BUYERS: FaqItem[] = [
   },
   {
     q: 'Will you help me compare neighborhoods?',
-    a: 'Yes. Oxford often suits shoppers who want retail and newer homes; Anniston stretches value with character and downtown amenities; Jacksonville offers a college-town feel. Heflin, Piedmont, and Lincoln open different commute and lifestyle fits — Ashley helps you match the town to year-three living, not just the first showing.',
+    a: 'Yes. Calhoun County (Anniston, Oxford, Jacksonville) often balances shopping, character homes, and university-town living. Cleburne County around Heflin brings Cheaha and acreage. Cherokee County is Weiss Lake and quieter waterfront. Talladega County (Lincoln and Talladega) fits Honda-corridor commuters. St. Clair County offers Logan Martin docks and Pell City access. Ashley helps you match the county to year-three living, not just the first showing.',
   },
   {
     q: 'How do I search current listings?',
@@ -106,7 +125,7 @@ export const FAQ_SELLERS: FaqItem[] = [
 export const FAQ_AREAS: FaqItem[] = [
   {
     q: 'What areas do you serve?',
-    a: 'Primarily Calhoun, Cherokee, and St. Clair counties — including Anniston, Oxford, Jacksonville, Heflin, Piedmont, and Lincoln — plus waterfront communities on Logan Martin Lake, Weiss Lake, and the Coosa River.',
+    a: 'Calhoun, Cleburne, Cherokee, Talladega, and St. Clair counties — plus waterfront communities on Logan Martin Lake, Weiss Lake, and the Coosa River. Towns like Anniston, Oxford, Jacksonville, Heflin, Centre, Lincoln, and Pell City sit inside those counties.',
   },
   {
     q: 'Do you work lake and land properties too?',
@@ -125,7 +144,7 @@ export const FAQ_ABOUT: FaqItem[] = [
   },
   {
     q: 'How does Ashley work with clients?',
-    a: 'Expect straightforward communication, local market context, and respect for your timeline. Whether you’re relocating to the Anniston–Oxford–Jacksonville area or listing a family home, the goal is a smooth process and a result you feel good about.',
+    a: 'Expect straightforward communication, local market context, and respect for your timeline. Whether you’re relocating to Calhoun, Cleburne, Cherokee, Talladega, or St. Clair County — or listing a family home — the goal is a smooth process and a result you feel good about.',
   },
   {
     q: 'Is there a fee for a consultation?',
@@ -144,7 +163,7 @@ export const BUYER_STEPS = [
   },
   {
     title: 'Tour with purpose',
-    body: 'Targeted showings across Calhoun, Cherokee, and St. Clair — not endless open houses.',
+    body: 'Targeted showings across Calhoun, Cleburne, Cherokee, Talladega, and St. Clair — not endless open houses.',
   },
   {
     title: 'Offer & negotiate',
@@ -252,7 +271,7 @@ export const FEATURED_GUIDES: GuideArticle[] = [
         heading: 'Seasonality and inventory',
         paragraphs: [
           'Weiss Lake inventory and showing activity can feel seasonal. Spring and early summer often bring more buyers and listings; cooler months can create negotiation windows. Working with a local agent who watches new listings daily matters — the right dock-ready home may not stay quiet for long.',
-          'Ashley monitors Cherokee County and nearby Calhoun/St. Clair waterfront so you can move quickly when a fit appears — or take a patient approach if you’re targeting a specific cove or price band.',
+          'Ashley monitors Cherokee County and nearby Calhoun, Cleburne, Talladega, and St. Clair waterfront so you can move quickly when a fit appears — or take a patient approach if you’re targeting a specific cove or price band.',
         ],
       },
       {
@@ -281,7 +300,7 @@ export const FEATURED_GUIDES: GuideArticle[] = [
         heading: 'Start with clarity, not endless scrolling',
         paragraphs: [
           'First-time buyers in Calhoun County and greater East Alabama often feel stuck between Zillow tabs and conflicting advice. The fix is a simple plan: define must-haves, get a realistic budget, and tour with purpose instead of every open house in a 40-mile radius.',
-          'Ashley Stedham Mitchell works with first-time buyers regularly — from Oxford subdivisions to Anniston character homes and Jacksonville’s university-adjacent streets. You’ll get straight talk on what your budget buys today, not inflated hope.',
+          'Ashley Stedham Mitchell works with first-time buyers regularly across Calhoun County — from Oxford subdivisions to Anniston character homes and Jacksonville’s university-adjacent streets — and neighboring Cleburne, Cherokee, Talladega, and St. Clair counties. You’ll get straight talk on what your budget buys today, not inflated hope.',
         ],
       },
       {
@@ -294,8 +313,8 @@ export const FEATURED_GUIDES: GuideArticle[] = [
       {
         heading: 'Neighborhood notes for first homes',
         paragraphs: [
-          'Oxford often attracts buyers who want retail, newer homes, and convenient schools. Anniston can stretch value with character properties and downtown amenities. Jacksonville appeals if you like a college-town feel and quieter residential pockets.',
-          'Heflin, Piedmont, and Lincoln open different lifestyles — sometimes with more space per dollar or an easier commute to work. Ashley helps you match commute and lifestyle so your first home still works in year three.',
+          'Calhoun County often attracts buyers who want retail and newer homes in Oxford, character properties in Anniston, or Jacksonville’s college-town streets. Cleburne County around Heflin brings Cheaha access and more space per dollar.',
+          'Cherokee County leans Weiss Lake and quieter waterfront. Talladega County (Lincoln and Talladega) fits Honda-corridor commuters. St. Clair County opens Pell City and Logan Martin living. Ashley helps you match commute and lifestyle so your first home still works in year three.',
         ],
       },
       {
@@ -317,7 +336,7 @@ export const FEATURED_GUIDES: GuideArticle[] = [
     slug: 'sell-for-top-dollar',
     title: 'Sell Your East Alabama Home for Top Dollar',
     teaser:
-      'Pricing, Certified Home Staging, and ERA King marketing — how Ashley helps sellers launch strong across Calhoun, Cherokee & St. Clair.',
+      'Pricing, Certified Home Staging, and ERA King marketing — how Ashley helps sellers launch strong across Calhoun, Cleburne, Cherokee, Talladega & St. Clair.',
     readTime: '7 min',
     sections: [
       {
@@ -337,7 +356,7 @@ export const FEATURED_GUIDES: GuideArticle[] = [
       {
         heading: 'Marketing that reaches real buyers',
         paragraphs: [
-          'ERA King Real Estate visibility plus Ashley’s local relationships puts your home in front of relocating families, lake seekers, and move-up buyers across Calhoun, Cherokee, and St. Clair counties.',
+          'ERA King Real Estate visibility plus Ashley’s local relationships puts your home in front of relocating families, lake seekers, and move-up buyers across Calhoun, Cleburne, Cherokee, Talladega, and St. Clair counties.',
           'Expect professional presentation, clear communication on showings, and advocacy from first offer through appraisal and closing. You’ll know where you stand instead of chasing rumors.',
         ],
       },
@@ -356,14 +375,14 @@ export const MORE_GUIDES: GuideArticle[] = [
   {
     slug: 'buying-calhoun-county',
     title: 'Buying a Home in Calhoun County',
-    teaser: 'Neighborhood notes for Anniston, Oxford, Jacksonville, Heflin, Piedmont, Lincoln, and surrounding communities.',
+    teaser: 'Neighborhood notes for Anniston, Oxford, Jacksonville, and surrounding Calhoun County communities.',
     readTime: '6 min',
     sections: [
       {
         heading: 'Know the towns',
         paragraphs: [
-          'Calhoun County offers a mix of historic downtown energy in Anniston, retail and schools around Oxford, and university-town living in Jacksonville. Nearby Heflin, Piedmont, and Lincoln each have a different feel — and price point.',
-          'Ashley grew up here. That local lens helps you weigh commute times, school zones, and which streets hold value over the long term.',
+          'Calhoun County offers a mix of historic downtown energy in Anniston, retail and schools around Oxford, and university-town living in Jacksonville. Piedmont and other Calhoun pockets add trail-town streets and more acreage.',
+          'Ashley grew up here. That local lens helps you weigh commute times, school zones, and which streets hold value — and when Cleburne, Cherokee, Talladega, or St. Clair might be a better fit.',
         ],
       },
       {
@@ -445,7 +464,7 @@ export const MORE_GUIDES: GuideArticle[] = [
       {
         heading: 'Why people move here',
         paragraphs: [
-          'Lower cost of living than larger metros, access to outdoor recreation, and close-knit communities draw relocating families and remote workers to the Anniston–Oxford–Jacksonville corridor — with Heflin, Piedmont, and Lincoln as strong nearby options.',
+          'Lower cost of living than larger metros, access to outdoor recreation, and close-knit communities draw relocating families and remote workers to Calhoun County’s Anniston–Oxford–Jacksonville corridor — with Cleburne, Cherokee, Talladega, and St. Clair as strong nearby options.',
         ],
       },
       {

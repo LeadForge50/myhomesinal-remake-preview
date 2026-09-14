@@ -16,12 +16,11 @@ import {
 } from '../data/content'
 
 const AREA_PHOTOS: Record<string, string> = {
-  Anniston: IMG.anniston,
-  Oxford: IMG.oxford,
-  Jacksonville: IMG.jacksonville,
-  Heflin: IMG.heflin,
-  Piedmont: IMG.mcclellanTrails,
-  Lincoln: IMG.lincoln,
+  'Calhoun County': IMG.anniston,
+  'Cleburne County': IMG.cheaha,
+  'Cherokee County': IMG.cedarBluff,
+  'Talladega County': IMG.talladega,
+  'St. Clair County': IMG.lakeHome,
 }
 
 const LAKE_PHOTOS: Record<string, string> = {
@@ -176,7 +175,7 @@ export default function Home() {
               Native Calhoun County real estate agent
             </p>
             <h2 className="mb-4 font-display text-3xl font-bold text-charcoal sm:text-4xl">
-              Oxford, Anniston, Jacksonville & <span className="text-era">Alabama lakefront homes</span>
+              East Alabama counties & <span className="text-era">Alabama lakefront homes</span>
             </h2>
             <p className="mb-4 text-muted leading-relaxed">
               Ashley Stedham Mitchell helps families buy and sell across East Alabama — with the
@@ -184,7 +183,7 @@ export default function Home() {
             </p>
             <p className="mb-6 text-muted leading-relaxed">
               Whether you’re chasing a dock on Logan Martin, acreage near the Coosa, or a move-in-ready home
-              in Oxford — you’ll get clear advice and responsive communication.
+              in Calhoun County — you’ll get clear advice and responsive communication.
             </p>
             <Link
               to="/about"
@@ -275,9 +274,9 @@ export default function Home() {
       <section id="featured-areas" className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 max-w-2xl">
-            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-era">Featured areas</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-era">Areas served</p>
             <h2 className="font-display text-3xl font-bold text-charcoal sm:text-4xl">
-              Lakes, towns & land worth calling home
+              Five East Alabama counties — lakes, land & hometown streets
             </h2>
           </div>
           <div className="mb-8 grid gap-4 md:grid-cols-3">
@@ -300,7 +299,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {AREAS.map((area) => (
               <div
                 key={area.name}
@@ -344,7 +343,7 @@ export default function Home() {
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-era-light">Buyers</p>
               <h2 className="mb-3 font-display text-3xl font-bold">Find your next chapter</h2>
               <p className="mb-6 text-sm leading-relaxed text-white/80">
-                From first homes in Oxford to lakefront weekends — a clear buying path with a local guide.
+                From first homes in Calhoun County to lakefront weekends — a clear buying path with a local guide.
               </p>
               <span className="inline-flex items-center gap-2 text-sm font-semibold text-era-light group-hover:gap-3">
                 Buyer guide <ArrowRight className="h-4 w-4" />
