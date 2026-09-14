@@ -33,9 +33,9 @@ export default function About() {
               appointment, and negotiation.
             </p>
             <p className="mb-4 leading-relaxed text-muted">
-              Her focus spans residential homes, land, and waterfront living — including Anniston, Oxford,
-              Jacksonville, Heflin, Piedmont, Lincoln, Logan Martin Lake, Weiss Lake, and the Coosa River
-              corridor.
+              Her focus spans residential homes, land, and waterfront living across Calhoun, Cleburne,
+              Cherokee, Talladega, and St. Clair counties — including Logan Martin Lake, Weiss Lake, and the
+              Coosa River corridor.
             </p>
             <p className="mb-6 leading-relaxed text-muted">
               Credentials include Certified Home Stager, ERA Marketing Excellence Award Winner 2025, and ERA
@@ -53,7 +53,7 @@ export default function About() {
             </div>
             <div className="mb-8">
               <h2 className="mb-2 text-sm font-semibold uppercase tracking-wider text-charcoal">
-                Primary counties
+                Areas served
               </h2>
               <ul className="flex flex-wrap gap-2">
                 {COUNTIES.map((c) => (
@@ -86,8 +86,8 @@ export default function About() {
           <h2 className="mb-3 font-display text-2xl font-bold text-charcoal">How Ashley works</h2>
           <p className="text-muted leading-relaxed">
             Expect straightforward communication, local market context, and respect for your timeline.
-            Whether you’re relocating to the Anniston–Oxford–Jacksonville area or listing a family home, the
-            goal is the same: a smooth process and a result you feel good about.
+            Whether you’re relocating to Calhoun, Cleburne, Cherokee, Talladega, or St. Clair County — or
+            listing a family home — the goal is the same: a smooth process and a result you feel good about.
           </p>
         </div>
       </section>
